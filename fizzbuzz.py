@@ -10,11 +10,11 @@ def fizz_buzz(n):
         return_string += 'Buzz'
 
     # Is there a Fizz or Buzz yet? -> return the number as a string
-    if return_string == '':
+    if return_string == '' or n == 0:
         return str(n)
     # Otherwise, return Fizz and/or Buzz
-    else:
-        return return_string
+    return return_string
+
 
 if __name__ == '__main__':
     user_input = raw_input("What is the number with which we are concerned? ")

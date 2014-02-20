@@ -1,6 +1,7 @@
 # The extensible version of fizzbuzz.py
 # Assumes an input dictionary of integer keys and string values
 
+
 def extensible_fizz_buzz(n, input_dict):
     return_string = ''
 
@@ -17,15 +18,16 @@ def extensible_fizz_buzz(n, input_dict):
     else:
         return return_string
 
+
 # Build the dictionary using console input
 def build_user_dict():
-    user_dict = {} # Create an empty dictionary
+    user_dict = {}  # Create an empty dictionary
     user_dict_key = int(raw_input("Enter the number to be handled (enter 0 if finished): "))
-    
+
     # While the user has not entered zero, keep accepting values
     while user_dict_key:
         user_dict_val = raw_input("What syllable is to be associated with that number? ")
-        user_dict[user_dict_key] = user_dict_val # Add the key/value pair to the dictionary
+        user_dict[user_dict_key] = user_dict_val  # Add the key/value pair to the dictionary
         user_dict_key = int(raw_input("Enter the number to be handled (enter 0 if finished): "))
     # And now the dictionary is built
     return user_dict
